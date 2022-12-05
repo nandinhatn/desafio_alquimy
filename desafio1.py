@@ -88,3 +88,5 @@ for result in session.scalars(order_stmt):
 stmt_join= select(Cliente.name, Cliente.cpf).join_from(Conta, Cliente)
 for result in session.scalars(stmt_join):
     print(result)
+    
+    
